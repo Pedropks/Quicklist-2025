@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="img/logo.png" alt="QuickList Logo" />
+
+    <main>
+      <div>
+        <img src="img/link button.png" alt="Botão de link" />
+      </div>
+
+      <h1>Compras da semana</h1>
+
+      <form class="first-input">
+        <input
+          type="text"
+          placeholder="Adicione um novo item"
+          required
+          id="name"
+          name="new-item"
+        />
+        <button type="submit" id="add-button">Adicionar item</button>
+      </form>
+
+      <footer>
+        <div id="clone" class="hidden">
+          <ul class="list">
+            <li class="button-list">
+              <input type="checkbox" id="new-item" checked />
+              <div class="item-container">
+                <label for="new-item">
+                  <p>Pão de forma</p>
+                </label>
+                <button class="delete-button" aria-label="Remover item">
+                  <img
+                    class="list-item"
+                    src="img/button.svg"
+                    alt="Ícone de lixeira"
+                  />
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="remove-alert hidden">
+          <img src="img/Icon.png" alt="Ícone de alerta" />
+          <div class="button-remove-2">
+            <span>O item foi removido da lista</span>
+            <button id="Remove-button">
+              <img src="img/delete-small.png" alt="Ícone de fechar" />
+            </button>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
