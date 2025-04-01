@@ -15,7 +15,7 @@ body {
   gap: 3.12rem;
 }
 
-#name {
+#item-input {
   width: 28.18rem;
   padding: 11px;
   padding-left: 1.15rem;
@@ -44,13 +44,13 @@ body {
   }
 }
 
-.first-input {
+#item-form {
   display: flex;
   gap: 1.125rem;
 }
 
 #add-button,
-#name {
+#item-input {
   outline: none; /* Remove a borda preta de foco */
 }
 
@@ -98,10 +98,10 @@ body {
 }
 
 #Remove-button img {
-  width: 1.25rem; /* Ajuste o tamanho do ícone */
+  width: 1.25rem;
 }
 
-.remove-alert {
+#remove-alert {
   display: flex;
   align-items: center;
   background-color: red;
@@ -173,7 +173,7 @@ h1 {
   font-family: "Inter", sans-serif;
 }
 
-.remove-alert {
+#remove-alert {
   border-radius: 0.7rem;
   padding: 0.6rem;
   color: white;
@@ -200,6 +200,6 @@ p {
   cursor: pointer;
 }
 
-.hidden {
-  overflow: hidden;
+#remove-alert {
+  display: none; /* Garante que o alerta esteja oculto inicialmente */
 }
